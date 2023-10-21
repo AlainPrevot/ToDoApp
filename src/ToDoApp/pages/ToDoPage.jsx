@@ -1,6 +1,8 @@
 import { TodoAdd, TodoList } from "../components";
 import { useToDo } from "../hooks";
 
+import "../../sass/pages/ToDoPage.sass";
+
 export const ToDoPage = () => {
   const {
     todos,
