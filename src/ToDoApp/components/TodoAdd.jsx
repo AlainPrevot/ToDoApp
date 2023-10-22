@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useForm } from "../hooks/useForm";
+import "../../sass/components/TodoAdd.sass";
 
 export const TodoAdd = ({ onNewTodo }) => {
   const { description, onInputChange, onResetForm } = useForm({
@@ -24,16 +25,13 @@ export const TodoAdd = ({ onNewTodo }) => {
     <form onSubmit={onFormSubmit}>
       <input
         type="text"
-        placeholder="¿Qué hay que hacer?"
-        className="form-control"
+        placeholder="Agregá tu próxima tarea..."
+        className=" toDoAdd__input"
         name="description"
+        autoComplete="off"
         value={description}
         onChange={onInputChange}
       />
-
-      <button type="submit" className="btn btn-outline-primary mt-1">
-        Agregar
-      </button>
     </form>
   );
 };
