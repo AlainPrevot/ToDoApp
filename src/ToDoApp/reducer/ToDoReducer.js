@@ -1,4 +1,4 @@
-// { type: [todo remove], payload: id }
+// Este es el reducer con las 3 acciones que se pueden realizar
 
 export const ToDoReducer = ( initialState = [], action ) => {
 

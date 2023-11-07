@@ -1,18 +1,23 @@
 import { useEffect, useReducer } from 'react';
 import { ToDoReducer } from '../reducer/ToDoReducer';
 
+
+// La funcion init sirve de iniciador para el reducer, en este caso rescata lo almacenado en el localStorage en la memoria que tenga como
+// nombre la ruta de la pagina actual
 const init = () => {
-    return JSON.parse(localStorage.getItem('todos')) || [];
+    return JSON.parse(localStorage.getItem(location.pathname)) || [];
 }
 
 export const useToDo = () => {
   
     const [ todos, dispatch ] = useReducer( ToDoReducer, [], init );
 
+    // Con el useEffect cada vez que haya un cambio en la lista lo almaceno en el localStorage
     useEffect(() => {
-      localStorage.setItem('todos', JSON.stringify( todos ) );
+      localStorage.setItem(location.pathname, JSON.stringify( todos ) );
     }, [todos])
     
+    // Estas son las diferentes opciones que pueden utilizarse en el reducer (crear, eliminar, marcar como echo)
 
     const handleNewTodo = ( todo ) => {
         const action = {

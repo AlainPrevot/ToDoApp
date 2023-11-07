@@ -5,7 +5,6 @@ export const WeekPage = () => {
   return (
     <>
       <ToDoDate />
-      <hr />
 
       <ToDoContentListAdd />
     </>

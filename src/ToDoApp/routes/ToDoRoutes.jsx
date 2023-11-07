@@ -4,6 +4,8 @@ import { DayPage } from "../pages/DayPage";
 
 import "../../sass/routes/ToDoRoutes.sass";
 import { WeekPage } from "../pages/WeekPage";
+import { MonthPage } from "../pages/MonthPage";
+import { YearPage } from "../pages/YearPage";
 
 export const ToDoRoutes = () => {
   return (
@@ -13,8 +15,8 @@ export const ToDoRoutes = () => {
       <Routes>
         <Route path="day" element={<DayPage />} />
         <Route path="week" element={<WeekPage />} />
-        {/* <Route path="month" element={<MonthPage />} />
-        <Route path="year" element={<YearPage />} /> */}
+        <Route path="month" element={<MonthPage />} />
+        <Route path="year" element={<YearPage />} />
 
         <Route path="/" element={<Navigate to="/day" />} />
       </Routes>
