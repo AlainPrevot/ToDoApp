@@ -34,6 +34,13 @@ export const useToDo = () => {
             payload: id
         });
     }
+    
+    const handleDeleteFinishTodo = ( id=todos) => {
+        dispatch({
+            type: '[TODO] Delete Todo',
+            payload: id
+        });
+    }
 
     const handleToggleTodo = ( id ) => {
         dispatch({
@@ -50,6 +57,7 @@ export const useToDo = () => {
 
         handleNewTodo,
         handleDeleteTodo,
+        handleDeleteFinishTodo,
         handleToggleTodo,
     }
 
