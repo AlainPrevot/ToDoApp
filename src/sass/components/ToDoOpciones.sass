@@ -1,5 +1,4 @@
 .toDoOpciones
-    // position: absolute
     position: absolute
     right: 0px
     list-style: none
@@ -32,3 +31,34 @@
             color: white
             border: none
             outline: none
+
+.primer_ul
+    // border: 1px solid red
+    margin-left: 100px
+
+    .segundo_ul
+        display: none
+
+        li
+            display: none
+
+    .ul_li
+        display: none
+
+.primer_ul:hover .segundo_ul
+    // display: block
+    // border: 1px solid green
+
+.segundo_ul:hover li
+    display: block
+
+.primer_ul
+    input
+        visibility: hidden
+    input:focus-within
+        border: 1px solid red
+        color: red
+        visibility: visible
+
+    input:focus
+        visibility: visible
