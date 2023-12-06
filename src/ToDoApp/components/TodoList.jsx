@@ -2,7 +2,12 @@
 import { TodoItem } from "./TodoItem";
 import "../../sass/components/TodoList.sass";
 
-export const TodoList = ({ todos = [], onDeleteTodo, onToggleTodo }) => {
+export const TodoList = ({
+  todos = [],
+  onDeleteTodo,
+  onToggleTodo,
+  onTransferTodo,
+}) => {
   return (
     <ul className="toDoList">
       {todos.map((todo) => (
@@ -11,6 +16,7 @@ export const TodoList = ({ todos = [], onDeleteTodo, onToggleTodo }) => {
           todo={todo}
           onDeleteTodo={onDeleteTodo}
           onToggleTodo={onToggleTodo}
+          onTransferTodo={onTransferTodo}
         />
       ))}
     </ul>

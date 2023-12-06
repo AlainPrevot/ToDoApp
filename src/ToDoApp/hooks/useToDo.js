@@ -19,6 +19,7 @@ export const useToDo = () => {
     
     // Estas son las diferentes opciones que pueden utilizarse en el reducer (crear, eliminar, marcar como echo)
 
+    // Agrega un nuevo TODO
     const handleNewTodo = ( todo ) => {
         const action = {
             type: '[TODO] Add Todo',
@@ -27,21 +28,24 @@ export const useToDo = () => {
 
         dispatch( action );
     }
-
+    // Elimina un TODO
     const handleDeleteTodo = ( id ) => {
         dispatch({
             type: '[TODO] Remove Todo',
             payload: id
         });
-    }
-    
-    const handleDeleteFinishTodo = ( id=todos) => {
+    }    
+    // Transfiere un TODO a otra lista
+    const handleTransferTodo = (todo, path) => {
         dispatch({
-            type: '[TODO] Delete Todo',
-            payload: id
+            type: '[TODO] Transfer Todo',
+            payload: todo.id,
+            path: path,
+            todo: todo,
+            local: JSON.parse(localStorage.getItem(path))
         });
     }
-
+    // Marca un TODO como echo
     const handleToggleTodo = ( id ) => {
         dispatch({
             type: '[TODO] Toggle Todo',
@@ -57,7 +61,7 @@ export const useToDo = () => {
 
         handleNewTodo,
         handleDeleteTodo,
-        handleDeleteFinishTodo,
+        handleTransferTodo,
         handleToggleTodo,
     }
 

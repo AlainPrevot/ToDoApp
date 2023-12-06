@@ -7,10 +7,9 @@ import "../../sass/components/ToDoContentListAdd.sass";
 export const ToDoContentListAdd = () => {
   const {
     todos,
-    // todosCount,
-    // pendingTodosCount,
     handleDeleteTodo,
     handleToggleTodo,
+    handleTransferTodo,
     handleNewTodo,
   } = useToDo();
   return (
@@ -21,6 +20,7 @@ export const ToDoContentListAdd = () => {
         todos={todos}
         onDeleteTodo={handleDeleteTodo}
         onToggleTodo={handleToggleTodo}
+        onTransferTodo={handleTransferTodo}
       />
     </div>
   );

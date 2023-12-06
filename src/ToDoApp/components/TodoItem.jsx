@@ -1,9 +1,14 @@
 /* eslint-disable react/prop-types */
 import "../../sass/components/TodoItem.sass";
-import { ToDoOpciones } from "./ToDoOpciones";
+import { ToDoOptions } from "./ToDoOptions";
 
 // eslint-disable-next-line no-unused-vars
-export const TodoItem = ({ todo, onDeleteTodo, onToggleTodo }) => {
+export const TodoItem = ({
+  todo,
+  onDeleteTodo,
+  onToggleTodo,
+  onTransferTodo,
+}) => {
   return (
     <li
       // className="toDoItem"
@@ -19,7 +24,11 @@ export const TodoItem = ({ todo, onDeleteTodo, onToggleTodo }) => {
       {/* <button className="btn btn-danger" onClick={() => onDeleteTodo(todo.id)}>
         Borrar
       </button> */}
-      <ToDoOpciones todo={todo} onDeleteTodo={onDeleteTodo} />
+      <ToDoOptions
+        todo={todo}
+        onDeleteTodo={onDeleteTodo}
+        onTransferTodo={onTransferTodo}
+      />
     </li>
   );
 };

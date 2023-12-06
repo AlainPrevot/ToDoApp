@@ -10,10 +10,10 @@ export const ToDoReducer = ( initialState = [], action ) => {
         case '[TODO] Remove Todo':
             return initialState.filter( todo => todo.id !== action.payload );
 
-            
-        case '[TODO] Delete Todo':
-            console.log(initialState)
-            return initialState.filter( todo => todo.done === false );
+
+        case '[TODO] Transfer Todo':
+            localStorage.setItem(action.path, JSON.stringify([...action.local, action.todo]))
+            return initialState.filter( todo => todo.id !== action.payload );
 
         case '[TODO] Toggle Todo':
             return initialState.map( todo => {
