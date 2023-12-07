@@ -1,11 +1,11 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { ToDoNav } from "../components/ToDoNav";
 import { DayPage } from "../pages/DayPage";
-
-import "../../sass/routes/ToDoRoutes.sass";
 import { WeekPage } from "../pages/WeekPage";
 import { MonthPage } from "../pages/MonthPage";
 import { YearPage } from "../pages/YearPage";
+
+import "../../sass/routes/ToDoRoutes.sass";
 
 export const ToDoRoutes = () => {
   return (

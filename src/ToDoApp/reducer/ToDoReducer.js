@@ -1,4 +1,4 @@
-// Este es el reducer con las 3 acciones que se pueden realizar
+// Este es el reducer con las 4 acciones que se pueden realizar
 
 export const ToDoReducer = ( initialState = [], action ) => {
 
@@ -9,7 +9,6 @@ export const ToDoReducer = ( initialState = [], action ) => {
 
         case '[TODO] Remove Todo':
             return initialState.filter( todo => todo.id !== action.payload );
-
 
         case '[TODO] Transfer Todo':
             localStorage.setItem(action.path, JSON.stringify([...action.local, action.todo]))

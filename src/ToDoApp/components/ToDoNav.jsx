@@ -1,12 +1,14 @@
 import { NavLink } from "react-router-dom";
+
 import "../../sass/components/ToDoNav.sass";
+
 export const ToDoNav = () => {
   return (
     <nav>
-      <NavLink to="/day">Dia</NavLink>
-      <NavLink to="/week">Semana</NavLink>
-      <NavLink to="/month">Mes</NavLink>
-      <NavLink to="/year">Año</NavLink>
+      <NavLink to="/day">Day</NavLink>
+      <NavLink to="/week">Week</NavLink>
+      <NavLink to="/month">Month</NavLink>
+      <NavLink to="/year">Year</NavLink>
     </nav>
   );
 };
