@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import "../../sass/components/TodoItem.sass";
 import { ToDoOptions } from "./ToDoOptions";
+import "../../sass/components/TodoItem.sass";
 
 // eslint-disable-next-line no-unused-vars
 export const TodoItem = ({
@@ -10,20 +10,10 @@ export const TodoItem = ({
   onTransferTodo,
 }) => {
   return (
-    <li
-      // className="toDoItem"
-      className={`toDoItem ${todo.done ? "toDoItem--realizado" : ""}`}
-    >
-      <span
-        className="toDoItem--span"
-        onClick={() => onToggleTodo(todo.id)}
-        aria-label="span"
-      >
+    <li className={`toDoItem ${todo.done ? "toDoItem--realizado" : ""}`}>
+      <span className="toDoItem__span" onClick={() => onToggleTodo(todo.id)}>
         {todo.description}
       </span>
-      {/* <button className="btn btn-danger" onClick={() => onDeleteTodo(todo.id)}>
-        Borrar
-      </button> */}
       <ToDoOptions
         todo={todo}
         onDeleteTodo={onDeleteTodo}

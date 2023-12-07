@@ -25,7 +25,8 @@ export const TodoAdd = ({ onNewTodo }) => {
     <form onSubmit={onFormSubmit}>
       <input
         type="text"
-        placeholder="Agregá tu próxima tarea..."
+        // placeholder="Agregá tu próxima tarea..."
+        placeholder="Add your next task..."
         className=" toDoAdd__input"
         name="description"
         autoComplete="off"
