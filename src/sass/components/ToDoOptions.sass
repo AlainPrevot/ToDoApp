@@ -6,7 +6,7 @@
     z-index: auto
 
     .toDoOptions__box, .toDoOptions__box--addresses
-        background-color: #3C8AA8
+        background-color: var(--backgroundOptions)
         border-radius: 5px
         position: absolute
         visibility: hidden
@@ -20,7 +20,7 @@
         button, span
             background-color: transparent
             border: none
-            color: white
+            color: var(--font)
             cursor: pointer
             display: block
             font-size: 1.2rem
@@ -30,7 +30,8 @@
             width: 100%
 
             &:hover
-                background-color: #6E9CB9
+                background-color: var(--hoverOptions)
+                color: white
 
         span:hover + .toDoOptions__box--addresses
             visibility: visible

@@ -1,0 +1,26 @@
+#mode
+    visibility: hidden
+
+.modeDark, .modeLight
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    cursor: pointer
+    height: 36px
+    position: fixed
+    right: 18px
+    top: 14px
+    width: 36px
+
+.modeLight
+    background-image: url('../../Icons/Sol.png')
+    display: none
+
+.modeDark
+    background-image: url('../../Icons/Luna.png')
+
+#mode:checked ~ .modeLight
+    display: block
+
+#mode:checked ~ .modeDark
+    display: none

@@ -1,0 +1,20 @@
+:root [data-theme="light"] {
+  --background: #84a2b9;
+  --backgroundCard: #cde1ee;
+  --backgroundAdd: #f0f9ff;
+  --font: #213140;
+  --Color__primary: #3c8aa8;
+  --Color__secondary: #6e9cb9;
+  --backgroundOptions: #f0f9ff;
+  --hoverOptions: #84a2b9;
+}
+[data-theme="dark"] {
+  --background: #6d9ab3;
+  --backgroundCard: #213140;
+  --backgroundAdd: #151d27;
+  --font: #ffffff;
+  --Color__primary: #3c8aa8;
+  --Color__secondary: #6e9cb9;
+  --backgroundOptions: #3c8aa8;
+  --hoverOptions: #6e9cb9;
+}

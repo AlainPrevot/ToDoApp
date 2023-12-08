@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("./Colors.css");
 * {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
@@ -15,4 +16,5 @@ input {
 
 .danger:hover {
   background-color: #dd1155 !important;
+  color: white !important;
 }

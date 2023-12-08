@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { ToDoApp } from "./ToDoApp.jsx";
 
 import "./index.css";
+// import "./prueba.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

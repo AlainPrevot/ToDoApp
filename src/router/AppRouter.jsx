@@ -3,10 +3,8 @@ import { ToDoRoutes } from "../ToDoApp/routes/ToDoRoutes";
 
 export const AppRouter = () => {
   return (
-    <>
-      <Routes>
-        <Route path="/*" element={<ToDoRoutes />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/*" element={<ToDoRoutes />} />
+    </Routes>
   );
 };
