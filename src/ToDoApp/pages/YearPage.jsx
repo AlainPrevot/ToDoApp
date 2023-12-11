@@ -1,5 +1,4 @@
-import { ToDoContentListAdd } from "../components/ToDoContentListAdd";
-import { ToDoDate } from "../components/ToDoDate";
+import { ToDoContentListAdd, ToDoDate } from "../components";
 
 export const YearPage = () => {
   return (

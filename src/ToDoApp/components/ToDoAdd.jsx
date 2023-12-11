@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import { useForm } from "../hooks/useForm";
-import "../../sass/components/TodoAdd.sass";
+import { useForm } from "../hooks";
+import "../../sass/components/ToDoAdd.sass";
 
-export const TodoAdd = ({ onNewTodo }) => {
+export const ToDoAdd = ({ onNewTodo }) => {
   const { description, onInputChange, onResetForm } = useForm({
     description: "",
   });

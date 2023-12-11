@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import { ToDoOptions } from "./ToDoOptions";
-import "../../sass/components/TodoItem.sass";
+import { ToDoOptions } from "../components";
+import "../../sass/components/ToDoItem.sass";
 
 // eslint-disable-next-line no-unused-vars
-export const TodoItem = ({
+export const ToDoItem = ({
   todo,
   onDeleteTodo,
   onToggleTodo,

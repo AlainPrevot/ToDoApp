@@ -1,5 +1,4 @@
-import { ToDoOptionsDropdown } from "./ToDoOptionsDropdown";
-import { ToDoOptionsButton } from "./ToDoOptionsButton";
+import { ToDoOptionsDropdown, ToDoOptionsButton } from "../components";
 import "../../sass/components/ToDoOptions.sass";
 
 /* eslint-disable react/prop-types */

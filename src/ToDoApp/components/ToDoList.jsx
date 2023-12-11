@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import { TodoItem } from "./TodoItem";
-import "../../sass/components/TodoList.sass";
+import { ToDoItem } from "../components";
+import "../../sass/components/ToDoList.sass";
 
-export const TodoList = ({
+export const ToDoList = ({
   todos = [],
   onDeleteTodo,
   onToggleTodo,
@@ -11,7 +11,7 @@ export const TodoList = ({
   return (
     <ul className="toDoList">
       {todos.map((todo) => (
-        <TodoItem
+        <ToDoItem
           key={todo.id}
           todo={todo}
           onDeleteTodo={onDeleteTodo}

@@ -1,9 +1,7 @@
-import { TodoAdd, TodoList } from "../components";
+import { ToDoAdd, ToDoDate, ToDoList, ToDoNav } from "../components";
 import { useToDo } from "../hooks";
 
 import "../../sass/pages/ToDoPage.sass";
-import { ToDoDate } from "../components/ToDoDate";
-import { ToDoNav } from "../components/ToDoNav";
 
 export const ToDoPage = () => {
   const {
@@ -20,17 +18,11 @@ export const ToDoPage = () => {
       <div className="ToDoPage">
         <ToDoNav />
         <div className="toDoPage__div--add">
-          {/* Hacer un componente para el apartado fecha */}
-          {/* Hacer un hooks para el apartado fecha */}
-          {/* 
-          <h2>Lunes</h2>
-          <h6>Oct 23, 2023</h6> */}
-
           <ToDoDate />
-          <TodoAdd onNewTodo={handleNewTodo} />
+          <ToDoAdd onNewTodo={handleNewTodo} />
         </div>
         <div className="toDoPage__Div--list">
-          <TodoList
+          <ToDoList
             todos={todos}
             onDeleteTodo={handleDeleteTodo}
             onToggleTodo={handleToggleTodo}

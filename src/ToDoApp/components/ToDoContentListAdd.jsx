@@ -1,6 +1,5 @@
 import { useToDo } from "../hooks";
-import { TodoAdd } from "./TodoAdd";
-import { TodoList } from "./TodoList";
+import { ToDoAdd, ToDoList } from "../components";
 
 import "../../sass/components/ToDoContentListAdd.sass";
 
@@ -15,10 +14,10 @@ export const ToDoContentListAdd = () => {
 
   return (
     <div className="ToDoContentListAdd">
-      <TodoAdd onNewTodo={handleNewTodo} />
+      <ToDoAdd onNewTodo={handleNewTodo} />
 
       <div className="toDoContentListAdd__div">
-        <TodoList
+        <ToDoList
           todos={todos}
           onDeleteTodo={handleDeleteTodo}
           onToggleTodo={handleToggleTodo}

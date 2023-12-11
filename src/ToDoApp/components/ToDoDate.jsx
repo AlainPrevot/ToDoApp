@@ -1,4 +1,4 @@
-import { useDate } from "../hooks/useDate";
+import { useDate } from "../hooks";
 import "../../sass/components/ToDoDate.sass";
 
 export const ToDoDate = () => {

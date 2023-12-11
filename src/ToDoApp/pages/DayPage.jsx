@@ -1,5 +1,4 @@
-import { ToDoDate } from "../components/ToDoDate";
-import { ToDoContentListAdd } from "../components/ToDoContentListAdd";
+import { ToDoContentListAdd, ToDoDate } from "../components";
 
 export const DayPage = () => {
   return (

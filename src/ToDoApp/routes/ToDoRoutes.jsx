@@ -1,10 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import { ToDoNav } from "../components/ToDoNav";
-import { DayPage } from "../pages/DayPage";
-import { WeekPage } from "../pages/WeekPage";
-import { MonthPage } from "../pages/MonthPage";
-import { YearPage } from "../pages/YearPage";
-import { ModeStyle } from "../components/ModeStyle";
+import { ModeStyle, ToDoNav } from "../components";
+import { DayPage, MonthPage, WeekPage, YearPage } from "../pages";
 
 import "../../sass/routes/ToDoRoutes.sass";
 import { useState } from "react";
