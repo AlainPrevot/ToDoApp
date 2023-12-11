@@ -17,12 +17,14 @@ export const ToDoContentListAdd = () => {
     <div className="ToDoContentListAdd">
       <TodoAdd onNewTodo={handleNewTodo} />
 
-      <TodoList
-        todos={todos}
-        onDeleteTodo={handleDeleteTodo}
-        onToggleTodo={handleToggleTodo}
-        onTransferTodo={handleTransferTodo}
-      />
+      <div className="toDoContentListAdd__div">
+        <TodoList
+          todos={todos}
+          onDeleteTodo={handleDeleteTodo}
+          onToggleTodo={handleToggleTodo}
+          onTransferTodo={handleTransferTodo}
+        />
+      </div>
     </div>
   );
 };

@@ -2,7 +2,7 @@
     height: 30px
     margin-top: -26px
     position: absolute
-    right: 20px
+    right: 12px
     z-index: auto
 
     .toDoOptions__box, .toDoOptions__box--addresses
@@ -10,12 +10,13 @@
         border-radius: 5px
         position: absolute
         visibility: hidden
-        z-index: 1
+        z-index: 2
 
     .toDoOptions__box
         height: 66px
         padding: 5px 0 5px 0
         width: 110px
+        left: -60px
 
         button, span
             background-color: transparent
@@ -29,6 +30,12 @@
             text-align: left
             width: 100%
 
+        button
+            z-index: 1
+
+        span
+            z-index: 2
+
             &:hover
                 background-color: var(--hoverOptions)
                 color: white
@@ -37,7 +44,7 @@
             visibility: visible
 
     .toDoOptions__box--addresses
-        left: 110px
+        left: -110px
         padding: 3px 0 3px 0
         top: 33px
         width: 110px
@@ -47,3 +54,14 @@
 
 .visible
     visibility: visible
+
+@media only screen and (min-width: 500px)  and (orientation: portrait)
+
+    .toDoOptions
+        right: 20px
+
+        .toDoOptions__box
+            left: 0px
+
+        .toDoOptions__box--addresses
+            left: 110px

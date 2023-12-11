@@ -19,7 +19,7 @@ export const ToDoOptions = ({
           Delete
         </button>
 
-        <span>Transferir</span>
+        <span className="menu">Transferir</span>
         <ul className="toDoOptions__box--addresses">
           {array.map((item) => (
             <ToDoOptionsButton

@@ -1,5 +1,6 @@
 #mode
     visibility: hidden
+    position: absolute
 
 .modeDark, .modeLight
     background-position: center
@@ -7,9 +8,9 @@
     background-size: cover
     cursor: pointer
     height: 36px
-    position: fixed
-    right: 18px
-    top: 14px
+    position: absolute
+    right: 12px
+    bottom: 14px
     width: 36px
 
 .modeLight
@@ -24,3 +25,10 @@
 
 #mode:checked ~ .modeDark
     display: none
+
+@media only screen and (min-width: 500px)
+
+    .modeDark, .modeLight
+        right: 18px
+        top: 14px
+        z-index: 1

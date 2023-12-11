@@ -1,2 +1,32 @@
 .ToDoContentListAdd
     width: 90%
+    height: 70%
+    position: relative
+
+.toDoContentListAdd__div
+    height: 90%
+    overflow-y: scroll
+
+.toDoContentListAdd__div::-webkit-scrollbar
+    -webkit-appearance: none
+
+.toDoContentListAdd__div::-webkit-scrollbar:vertical
+    width: 4px
+
+.toDoContentListAdd__div::-webkit-scrollbar:horizontal
+    height: 2px
+
+.toDoContentListAdd__div::-webkit-scrollbar-thumb
+    background-color: var(--Color__secondary)
+    border-radius: 20px
+
+.toDoContentListAdd__div::-webkit-scrollbar-track
+    border-radius: 10px
+
+.toDoContentListAdd__div::-webkit-scrollbar-button:increment, .toDoContentListAdd__div::-webkit-scrollbar-button
+    display: none
+
+@media only screen and (min-width: 560px)
+
+    .toDoContentListAdd__div
+        height: 80%
