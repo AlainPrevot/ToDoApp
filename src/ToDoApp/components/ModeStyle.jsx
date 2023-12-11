@@ -8,6 +8,7 @@ export const ModeStyle = ({ onMode }) => {
         id="mode"
         type="checkbox"
         name="modeStyle"
+        className="mode"
         onClick={() => onMode()}
       />
       <label htmlFor="mode" className="modeDark"></label>
