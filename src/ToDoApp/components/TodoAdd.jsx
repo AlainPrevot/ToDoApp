@@ -33,6 +33,9 @@ export const TodoAdd = ({ onNewTodo }) => {
         value={description}
         onChange={onInputChange}
       />
+      <button className="toDoAdd__button" type="submit">
+        Add
+      </button>
     </form>
   );
 };
