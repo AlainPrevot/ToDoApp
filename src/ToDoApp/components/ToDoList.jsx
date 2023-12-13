@@ -2,6 +2,8 @@
 import { ToDoItem } from "../components";
 import "../../sass/components/ToDoList.sass";
 
+import PropTypes from "prop-types";
+
 export const ToDoList = ({
   todos = [],
   onDeleteTodo,
@@ -21,4 +23,11 @@ export const ToDoList = ({
       ))}
     </ul>
   );
+};
+
+ToDoList.propTypes = {
+  todos: PropTypes.array.isRequired,
+  onDeleteTodo: PropTypes.func.isRequired,
+  onToggleTodo: PropTypes.func.isRequired,
+  onTransferTodo: PropTypes.func.isRequired,
 };

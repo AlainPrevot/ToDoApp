@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en ModeStyle El componente hace match con el Snapshot 1`] = `
+<div>
+  <input
+    class="mode"
+    id="mode"
+    name="modeStyle"
+    type="checkbox"
+  />
+  <label
+    class="modeDark"
+    for="mode"
+  />
+  <label
+    class="modeLight"
+    for="mode"
+  />
+</div>
+`;

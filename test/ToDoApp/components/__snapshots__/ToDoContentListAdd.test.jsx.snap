@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <ToDoContentListAdd/> Debe de hacer match con el Snapshot 1`] = `
+<div>
+  <div
+    class="ToDoContentListAdd"
+  >
+    <form>
+      <input
+        autocomplete="off"
+        class=" toDoAdd__input"
+        name="description"
+        placeholder="Add your next task..."
+        type="text"
+        value=""
+      />
+      <button
+        class="toDoAdd__button"
+        type="submit"
+      >
+        Add
+      </button>
+    </form>
+    <div
+      class="toDoContentListAdd__div"
+    >
+      <ul
+        class="toDoList"
+      />
+    </div>
+  </div>
+</div>
+`;

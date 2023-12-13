@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <ToDoOptionsDropdown/> Debe de hacer match con el Snapshot 1`] = `
+<div>
+  <div
+    class="ToDoOptionsDropdown__box menu"
+  >
+    <div
+      class="ToDoOptionsDropdown__box--icons menu"
+    />
+    <div
+      class="ToDoOptionsDropdown__box--icons menu"
+    />
+    <div
+      class="ToDoOptionsDropdown__box--icons menu"
+    />
+  </div>
+</div>
+`;

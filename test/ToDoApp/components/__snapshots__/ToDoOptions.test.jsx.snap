@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <ToDoOptions/> Debe de hacer match con el Snapshot 1`] = `
+<div>
+  <div
+    class="toDoOptions"
+  >
+    <div
+      class="ToDoOptionsDropdown__box menu"
+    >
+      <div
+        class="ToDoOptionsDropdown__box--icons menu"
+      />
+      <div
+        class="ToDoOptionsDropdown__box--icons menu"
+      />
+      <div
+        class="ToDoOptionsDropdown__box--icons menu"
+      />
+    </div>
+    <div
+      class="toDoOptions__box menu"
+      id="1"
+    >
+      <button
+        class="danger"
+      >
+        Delete
+      </button>
+      <span
+        class="menu"
+      >
+        Transferir
+      </span>
+      <ul
+        class="toDoOptions__box--addresses"
+      >
+        <li
+          class="ToDoOptionsButton"
+        >
+          <button>
+            Day
+          </button>
+        </li>
+        <li
+          class="ToDoOptionsButton"
+        >
+          <button>
+            Week
+          </button>
+        </li>
+        <li
+          class="ToDoOptionsButton"
+        >
+          <button>
+            Month
+          </button>
+        </li>
+        <li
+          class="ToDoOptionsButton"
+        >
+          <button>
+            Year
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

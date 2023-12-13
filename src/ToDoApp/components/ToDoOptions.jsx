@@ -1,6 +1,8 @@
 import { ToDoOptionsDropdown, ToDoOptionsButton } from "../components";
 import "../../sass/components/ToDoOptions.sass";
 
+import PropTypes from "prop-types";
+
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 export const ToDoOptions = ({
@@ -34,4 +36,11 @@ export const ToDoOptions = ({
       </div>
     </div>
   );
+};
+
+ToDoOptions.propTypes = {
+  todo: PropTypes.object.isRequired,
+  onDeleteTodo: PropTypes.func.isRequired,
+  onTransferTodo: PropTypes.func.isRequired,
+  array: PropTypes.array,
 };

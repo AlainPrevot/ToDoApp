@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from "prop-types";
 
 export const useForm = ( initialForm = {} ) => {
   
@@ -22,4 +23,8 @@ export const useForm = ( initialForm = {} ) => {
         onInputChange,
         onResetForm,
     }
+}
+
+useForm.propTypes = {
+    initialForm: PropTypes.object,
 }

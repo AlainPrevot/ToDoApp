@@ -2,7 +2,8 @@
 import { ToDoOptions } from "../components";
 import "../../sass/components/ToDoItem.sass";
 
-// eslint-disable-next-line no-unused-vars
+import PropTypes from "prop-types";
+
 export const ToDoItem = ({
   todo,
   onDeleteTodo,
@@ -21,4 +22,11 @@ export const ToDoItem = ({
       />
     </li>
   );
+};
+
+ToDoItem.propTypes = {
+  todo: PropTypes.object.isRequired,
+  onDeleteTodo: PropTypes.func.isRequired,
+  onToggleTodo: PropTypes.func.isRequired,
+  onTransferTodo: PropTypes.func.isRequired,
 };

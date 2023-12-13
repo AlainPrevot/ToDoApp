@@ -1,5 +1,5 @@
 import "../../sass/components/ToDoOptionsDropdown.sass";
-// eslint-disable-next-line react/prop-types
+import PropTypes from "prop-types";
 export const ToDoOptionsDropdown = ({ ElementId }) => {
   //Coloca la clase visible en el elemento que se le pasa como parametro
   const toggleVisibility = (id) => {
@@ -31,4 +31,8 @@ export const ToDoOptionsDropdown = ({ ElementId }) => {
       <div className="ToDoOptionsDropdown__box--icons menu"></div>
     </div>
   );
+};
+
+ToDoOptionsDropdown.propTypes = {
+  ElementId: PropTypes.number.isRequired,
 };

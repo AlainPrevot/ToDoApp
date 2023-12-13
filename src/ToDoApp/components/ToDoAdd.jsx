@@ -1,6 +1,7 @@
-/* eslint-disable react/prop-types */
 import { useForm } from "../hooks";
 import "../../sass/components/ToDoAdd.sass";
+
+import PropTypes from "prop-types";
 
 export const ToDoAdd = ({ onNewTodo }) => {
   const { description, onInputChange, onResetForm } = useForm({
@@ -38,4 +39,8 @@ export const ToDoAdd = ({ onNewTodo }) => {
       </button>
     </form>
   );
+};
+
+ToDoAdd.propTypes = {
+  onNewTodo: PropTypes.func.isRequired,
 };

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <ToDoNav/> Debe de hacer match con el Snapshot 1`] = `
+<div>
+  <nav>
+    <a
+      class=""
+      href="/day"
+    >
+      Day
+    </a>
+    <a
+      class=""
+      href="/week"
+    >
+      Week
+    </a>
+    <a
+      class=""
+      href="/month"
+    >
+      Month
+    </a>
+    <a
+      class=""
+      href="/year"
+    >
+      Year
+    </a>
+  </nav>
+  ;
+</div>
+`;

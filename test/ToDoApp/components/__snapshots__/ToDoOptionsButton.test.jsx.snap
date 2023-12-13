@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <ToDoOptionsButton/> Debe de hacer match con el Snapshot 1`] = `
+<div>
+  <li
+    class="ToDoOptionsButton"
+  >
+    <button>
+      week
+    </button>
+  </li>
+</div>
+`;
