@@ -24,7 +24,7 @@ export const ToDoRoutes = () => {
           <Route path="ToDoApp/month" element={<MonthPage />} />
           <Route path="ToDoApp/year" element={<YearPage />} />
 
-          <Route path="/" element={<Navigate to="ToDoApp/day" />} />
+          <Route path="/*" element={<Navigate to="ToDoApp/day" />} />
         </Routes>
       </div>
     </div>
