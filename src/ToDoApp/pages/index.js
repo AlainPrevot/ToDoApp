@@ -1,5 +1,4 @@
 export * from './DayPage.jsx'
 export * from './WeekPage.jsx'
-export * from './ToDoPage.jsx'
 export * from './MonthPage.jsx'
 export * from './YearPage.jsx'
