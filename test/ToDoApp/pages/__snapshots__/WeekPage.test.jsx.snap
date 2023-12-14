@@ -6,12 +6,12 @@ exports[`Pruebas en <DayPage/> Debe de hacer match con el Snapshot 1`] = `
     class="toDoDate"
   >
     <h2>
-      Wednesday
+      Thursday
     </h2>
     <h6>
       Dec
        
-      13
+      14
       , 
       2023
     </h6>
