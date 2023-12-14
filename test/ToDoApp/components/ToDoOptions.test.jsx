@@ -120,7 +120,7 @@ describe("Pruebas en <ToDoOptions/>", () => {
   test("Debe de dibujarse un ToDoOptionsButton por cada elemento del array, menos el que tenga el mismo path", () => {
     Object.defineProperty(window, "location", {
       value: {
-        pathname: "/day",
+        pathname: "/ToDoApp/day",
       },
       writable: true,
     });

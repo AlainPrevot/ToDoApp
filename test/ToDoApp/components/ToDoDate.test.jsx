@@ -11,7 +11,7 @@ describe("Pruebas en <ToDoDate/>", () => {
   test("Debe de mostrar la fecha de hoy si el pathname es /day", () => {
     Object.defineProperty(window, "location", {
       value: {
-        pathname: "/day",
+        pathname: "/ToDoApp/day",
       },
       writable: true,
     });
@@ -35,7 +35,7 @@ describe("Pruebas en <ToDoDate/>", () => {
   test("Debe de mostrar la semana actual si el pathname es /week", () => {
     Object.defineProperty(window, "location", {
       value: {
-        pathname: "/week",
+        pathname: "/ToDoApp/week",
       },
       writable: true,
     });
@@ -59,7 +59,7 @@ describe("Pruebas en <ToDoDate/>", () => {
   test("Debe de mostrar el mes actual si el pathname es /month", () => {
     Object.defineProperty(window, "location", {
       value: {
-        pathname: "/month",
+        pathname: "/ToDoApp/month",
       },
       writable: true,
     });
@@ -81,7 +81,7 @@ describe("Pruebas en <ToDoDate/>", () => {
   test("Debe de mostrar el año actual si el pathname es /year", () => {
     Object.defineProperty(window, "location", {
       value: {
-        pathname: "/year",
+        pathname: "/ToDoApp/year",
       },
       writable: true,
     });

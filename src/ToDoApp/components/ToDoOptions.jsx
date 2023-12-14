@@ -27,9 +27,9 @@ export const ToDoOptions = ({
               key={item}
               name={item}
               onTransferTodo={() =>
-                onTransferTodo(todo, `/${item.toLowerCase()}`)
+                onTransferTodo(todo, `/ToDoApp/${item.toLowerCase()}`)
               }
-              path={`/${item.toLowerCase()}`}
+              path={`/ToDoApp/${item.toLowerCase()}`}
             />
           ))}
         </ul>
