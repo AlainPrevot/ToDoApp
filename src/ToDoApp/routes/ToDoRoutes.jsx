@@ -19,12 +19,12 @@ export const ToDoRoutes = () => {
         <ToDoNav />
 
         <Routes>
-          <Route path="day" element={<DayPage />} />
-          <Route path="week" element={<WeekPage />} />
-          <Route path="month" element={<MonthPage />} />
-          <Route path="year" element={<YearPage />} />
+          <Route path="ToDoApp/day" element={<DayPage />} />
+          <Route path="ToDoApp/week" element={<WeekPage />} />
+          <Route path="ToDoApp/month" element={<MonthPage />} />
+          <Route path="ToDoApp/year" element={<YearPage />} />
 
-          <Route path="/" element={<Navigate to="/day" />} />
+          <Route path="/" element={<Navigate to="ToDoApp/day" />} />
         </Routes>
       </div>
     </div>

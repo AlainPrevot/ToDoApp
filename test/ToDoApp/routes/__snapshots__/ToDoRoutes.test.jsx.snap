@@ -27,25 +27,25 @@ exports[`Pruebas en <ToDoRoutes/> Debe de hacer match con el Snapshot 1`] = `
         <a
           aria-current="page"
           class="active"
-          href="/day"
+          href="/ToDoApp/day"
         >
           Day
         </a>
         <a
           class=""
-          href="/week"
+          href="/ToDoApp/week"
         >
           Week
         </a>
         <a
           class=""
-          href="/month"
+          href="/ToDoApp/month"
         >
           Month
         </a>
         <a
           class=""
-          href="/year"
+          href="/ToDoApp/year"
         >
           Year
         </a>

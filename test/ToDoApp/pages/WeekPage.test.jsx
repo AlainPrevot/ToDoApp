@@ -5,7 +5,7 @@ import { WeekPage } from "../../../src/ToDoApp/pages/WeekPage";
 describe("Pruebas en <DayPage/>", () => {
   Object.defineProperty(window, "location", {
     value: {
-      pathname: "/day",
+      pathname: "/ToDoApp/day",
     },
     writable: true,
   });

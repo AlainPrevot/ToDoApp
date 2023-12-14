@@ -5,14 +5,14 @@ import { ToDoOptionsButton } from "../../../src/ToDoApp/components";
 describe("Pruebas en <ToDoOptionsButton/>", () => {
   Object.defineProperty(window, "location", {
     value: {
-      pathname: "/day",
+      pathname: "/ToDoApp/day",
     },
     writable: true,
   });
   test("Debe de hacer match con el Snapshot", () => {
     const name = "week";
     const onTransferTodo = jest.fn();
-    const path = "/week";
+    const path = "/ToDoApp/week";
     const { container } = render(
       <ToDoOptionsButton
         name={name}
@@ -26,7 +26,7 @@ describe("Pruebas en <ToDoOptionsButton/>", () => {
   test("Debe de dibujar el button si el pathname es diferente al path", () => {
     const name = "week";
     const onTransferTodo = jest.fn();
-    const path = "/week";
+    const path = "/ToDoApp/week";
     const { container } = render(
       <ToDoOptionsButton
         name={name}
@@ -43,7 +43,7 @@ describe("Pruebas en <ToDoOptionsButton/>", () => {
   test("No debe de dibujar el button si el pathname es igual al path", () => {
     const name = "day";
     const onTransferTodo = jest.fn();
-    const path = "/day";
+    const path = "/ToDoApp/day";
     const { container } = render(
       <ToDoOptionsButton
         name={name}
@@ -60,7 +60,7 @@ describe("Pruebas en <ToDoOptionsButton/>", () => {
   test("Debe de llamar a la funcion onTransferTodo", () => {
     const name = "week";
     const onTransferTodo = jest.fn();
-    const path = "/week";
+    const path = "/ToDoApp/week";
     const { container } = render(
       <ToDoOptionsButton
         name={name}

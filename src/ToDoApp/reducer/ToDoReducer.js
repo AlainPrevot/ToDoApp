@@ -11,7 +11,7 @@ export const ToDoReducer = ( initialState = [], action ) => {
             return initialState.filter( todo => todo.id !== action.payload );
 
         case '[TODO] Transfer Todo':
-            localStorage.setItem(action.path, JSON.stringify([...action.local, action.todo]))
+            localStorage.setItem(action.path, JSON.stringify([...(action.local ?? []), action.todo]))
             return initialState.filter( todo => todo.id !== action.payload );
 
         case '[TODO] Toggle Todo':

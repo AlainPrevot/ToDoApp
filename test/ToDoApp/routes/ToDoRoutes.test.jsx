@@ -27,7 +27,7 @@ describe("Pruebas en <ToDoRoutes/>", () => {
 
   test("Debe de mostrar WeekPage", () => {
     render(
-      <MemoryRouter initialEntries={["/week"]}>
+      <MemoryRouter initialEntries={["/ToDoApp/week"]}>
         <ToDoRoutes />;
       </MemoryRouter>
     );
@@ -39,7 +39,7 @@ describe("Pruebas en <ToDoRoutes/>", () => {
 
   test("Debe de mostrar MonthPage", () => {
     render(
-      <MemoryRouter initialEntries={["/month"]}>
+      <MemoryRouter initialEntries={["/ToDoApp/month"]}>
         <ToDoRoutes />;
       </MemoryRouter>
     );
@@ -51,7 +51,7 @@ describe("Pruebas en <ToDoRoutes/>", () => {
 
   test("Debe de mostrar YearPage", () => {
     render(
-      <MemoryRouter initialEntries={["/year"]}>
+      <MemoryRouter initialEntries={["/ToDoApp/year"]}>
         <ToDoRoutes />;
       </MemoryRouter>
     );

@@ -7,7 +7,7 @@ export const ToDoDate = () => {
 
   // Dependiendo de la ruta, se muestra una fecha u otra
   switch (location.pathname) {
-    case "/day":
+    case "/ToDoApp/day":
       return (
         <div className="toDoDate">
           <h2>{day}</h2>
@@ -17,7 +17,7 @@ export const ToDoDate = () => {
         </div>
       );
 
-    case "/week":
+    case "/ToDoApp/week":
       return (
         <div className="toDoDate">
           <h2>{week}° Week</h2>
@@ -27,7 +27,7 @@ export const ToDoDate = () => {
         </div>
       );
 
-    case "/month":
+    case "/ToDoApp/month":
       return (
         <div className="toDoDate">
           <h2>{month}</h2>
@@ -37,7 +37,7 @@ export const ToDoDate = () => {
         </div>
       );
 
-    case "/year":
+    case "/ToDoApp/year":
       return (
         <div className="toDoDate">
           <h2>{year}</h2>
